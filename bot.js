@@ -29,6 +29,12 @@ bot.on('ready', () => {
 
 bot.on('message', (message) => {
 
+    for(var i = 0; i < responseObject.length; i++) {
+        if(responseObject[i].toLowerCase() === "whatever") {
+            //Found a match!
+        }
+    }
+
     if(responseObject[message.content]) {
         message.channel.send(responseObject[message.content]);
       }
