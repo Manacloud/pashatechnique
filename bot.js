@@ -1,5 +1,13 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
+
+Array.prototype.toLowerCase = function() { 
+    for (var i = 0; i < this.length; i++) {
+        this[i] = this[i].toString().toLowerCase(); 
+    }
+}
+
+
 const responseObject = {
     'ziema': 'бля холодно пиздец!',
     'vasara': 'бля холодно пиздец!',
@@ -28,12 +36,6 @@ bot.on('ready', () => {
 });
 
 bot.on('message', (message) => {
-    
-    var responseObject = ['ziema', 'vasara', 'kaifs', 'rīt']
-    for(var i = 0; i < responseObject.length; i++) {
-        if(responseObject[i].toLowerCase() === "whatever") {
-        }
-    }
 
     if(responseObject[message.content]) {
         message.channel.send(responseObject[message.content]);
