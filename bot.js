@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
-const args = message.content.splice(prefix.length).trim().split(/ +/g);
+const args = splice(prefix.length).trim().split(/ +/g);
 
 bot.on('ready', () => {
     console.log(`Bot has started, with ${bot.users.size} users, in ${bot.channels.size} channels of ${bot.guilds.size} servers.`);
