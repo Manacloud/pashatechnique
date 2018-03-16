@@ -11,10 +11,10 @@ bot.on('message', (message) => {
     
     msg = message.content.toLowerCase();
 
-    if (msg.contain('github') == 0){
+    if (msg.includes('github')){
         message.reply('Initialized');
     }
-    if (message.content == 'ziema'){
+    if (msg.includes('ziema')){
         message.reply('бля холодно пиздец!');
     }
 })
