@@ -28,10 +28,10 @@ bot.on('ready', () => {
 });
 
 bot.on('message', (message) => {
-
+    
+    var responseObject = ['ziema', 'vasara', 'kaifs', 'rīt']
     for(var i = 0; i < responseObject.length; i++) {
         if(responseObject[i].toLowerCase() === "whatever") {
-            //Found a match!
         }
     }
 
