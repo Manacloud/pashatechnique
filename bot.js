@@ -29,7 +29,7 @@ bot.on('ready', () => {
 
 bot.on('message', (message) => {
     
-    if(responseObject[message.content.toLowerCase]) {
+    if(responseObject.toLowerCase()[message.content]) {
         message.channel.send(responseObject[message.content]);
       }
     if (message.author.bot) return;
