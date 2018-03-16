@@ -6,18 +6,14 @@ bot.on('ready', () => {
 });
 
 bot.on('message', (message) => {
-    if (message.content == 'ping'){
-        message.reply('pong');
-    }
-})
+    
+    if (message.author.bot) return;
+    
+    msg = message.content.toLowerCase();
 
-bot.on('message', (message) => {
-    if (message.content == 'github'){
+    if (msg.contain('github') == 0){
         message.reply('Initialized');
     }
-})
-
-bot.on('message', (message) => {
     if (message.content == 'ziema'){
         message.reply('бля холодно пиздец!');
     }
