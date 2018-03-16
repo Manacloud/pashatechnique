@@ -3,6 +3,7 @@ const bot = new Discord.Client();
 
 bot.on('ready', () => {
     console.log(`Bot has started, with ${bot.users.size} users, in ${bot.channels.size} channels of ${bot.guilds.size} servers.`);
+    bot.user.setActivity(`XANAX`);
 });
 
 bot.on('message', (message) => {
@@ -14,7 +15,7 @@ bot.on('message', (message) => {
     if (msg.includes('github')){
         message.reply('Initialized');
     }
-    if (msg.includes('ziema')){
+    if (msg.includes('ziema', 'vasara')){
         message.reply('бля холодно пиздец!');
     }
 })
