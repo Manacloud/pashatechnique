@@ -11,4 +11,10 @@ bot.on('message', (message) => {
     }
 })
 
+bot.on('message', (message) => {
+    if (message.content == 'ziema'){
+        message.reply('бля холодно пиздец!');
+    }
+})
+
 bot.login(process.env.BOT_TOKEN);
