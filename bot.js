@@ -15,7 +15,7 @@ bot.on('message', (message) => {
     if (msg.includes('github')){
         message.reply('Initialized');
     }
-    if (msg.includes('ziema', 'vasara')){
+    if (msg.includes('ziema'||'vasara')){
         message.reply('бля холодно пиздец!');
     }
 })
