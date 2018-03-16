@@ -12,6 +12,12 @@ bot.on('message', (message) => {
 })
 
 bot.on('message', (message) => {
+    if (message.content == 'github'){
+        message.reply('Initialized');
+    }
+})
+
+bot.on('message', (message) => {
     if (message.content == 'ziema'){
         message.reply('бля холодно пиздец!');
     }
