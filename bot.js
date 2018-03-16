@@ -28,11 +28,9 @@ bot.on('ready', () => {
 });
 
 bot.on('message', (message) => {
-    
-msg = responseObject.toLowerCase();
 
-    if(msg[message.content]) {
-        message.channel.send(msg[message.content]);
+    if(responseObject[message.content]) {
+        message.channel.send(responseObject[message.content]);
       }
     if (message.author.bot) return;
 })
