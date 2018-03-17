@@ -72,7 +72,7 @@ bot.on('message', (message) => {
         message.reply('https://imgur.com/a/JH1if');
     }
     if(msg.includes('viktors')){
-    message.channel.reply('https://i.imgur.com/dzAZOXv.png');
+    message.reply('https://i.imgur.com/dzAZOXv.png');
     }
 })
 
