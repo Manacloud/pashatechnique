@@ -72,8 +72,8 @@ bot.on('message', (message) => {
         message.reply('https://imgur.com/a/JH1if');
     }
     if(msg.includes('viktors')){
-    message.channel.send("Test", {
-        file: "https://imgur.com/dzAZOXv"
+    message.channel.send('Test', {
+        file: 'https://i.imgur.com/dzAZOXv.png'
     });
 })
 
