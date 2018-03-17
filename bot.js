@@ -71,6 +71,10 @@ bot.on('message', (message) => {
     if(msg.includes('ticu')){
         message.reply('https://imgur.com/a/JH1if');
     }
+    if(msg.includes('viktors')){
+    message.channel.send("Test", {
+        file: "https://imgur.com/dzAZOXv"
+    });
 })
 
 bot.login(process.env.BOT_TOKEN);
