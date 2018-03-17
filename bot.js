@@ -68,6 +68,9 @@ bot.on('message', (message) => {
     if(msg.includes('sīdžu')){
         message.reply('Жгучая хуйня');
     }
+    if(msg.includes('ticu')){
+        message.reply('https://imgur.com/a/JH1if');
+    }
 })
 
 bot.login(process.env.BOT_TOKEN);
